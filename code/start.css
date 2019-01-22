@@ -1,0 +1,66 @@
+.hello{
+    background: #504A4B;
+    margin-left: 40px;
+	margin-right: 40px;
+    }
+.page{
+	background: white;
+	margin-left: 900px;
+	margin-right:200px;
+	font-family: Tahoma, Arial, sans-serif;
+	font-style: bold;
+}
+.spage{
+	background: white;
+	margin-left: 900px;
+	margin-right:200px;
+	font-family: Tahoma, Arial, sans-serif;
+	font-style: bold;
+}
+body{
+	background-image: url("back.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+	background-size:700px 600px;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #2b60de;
+  border: none;
+  color: white;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  height:50px;
+  text-align: center;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
